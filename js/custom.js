@@ -24,13 +24,6 @@ $(document).ready(function () {
     $('a[data-rel]').each(function () {
         $(this).attr('rel', $(this).data('rel'));
     });
-    $("a[rel^='prettyPhoto']").prettyPhoto({
-        overlay_gallery: false,
-        social_tools: '',
-        deeplinking: false,
-        default_width: 500,
-        opacity: "1"
-    });
 
     ////////////////
     //FORM STUFF...
