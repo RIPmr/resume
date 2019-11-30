@@ -1,30 +1,53 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <!--BEGIN HEAD MATE-->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="initial-scale=1.0,width=device-width"/>
-    <meta name="keywords" content="Resume">
-    <meta name="description" content="Resume">
-    <meta name="author" content="HZT">
-    <meta name="version" content="1.0.0">
-    <!--END HEAD MATE-->
-
-    <!--BEGIN HEAD LINK SHORTCUT ICON-->
-    <!--link rel="shortcut icon" href="images/icon/zhihuawei_favicon32x32.ico"-->
-    <!--END HEAD LINK SHORTCUT ICON-->
-
-    <!--BEGIN HEAD LINK STYLE-->
+	<!--BEGIN HEAD MATE-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+	<meta name="keywords" content="Resume">
+	<meta name="description" content="Resume">
+	<meta name="author" content="HZT">
+	<meta name="version" content="1.0.0">
+	<!--END HEAD MATE-->
+	<!--BEGIN HEAD LINK SHORTCUT ICON-->
+	<!--link rel="shortcut icon" href="images/icon/zhihuawei_favicon32x32.ico"-->
+	<!--END HEAD LINK SHORTCUT ICON-->
+	<!--BEGIN HEAD LINK STYLE-->
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <!--BASE STYLE CSS-->
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-    <!--PRINT CSS-->
-    <link rel="stylesheet" href="css/print.css" type="text/css" media="print"/>
-    <!--END HEAD LINK STYLE-->
+	<!--BASE STYLE CSS-->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<!--PRINT CSS-->
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+	<!--END HEAD LINK STYLE-->
 
-    <!--BEGIN HEAD TITLE-->
-    <title>HZT - RESUME</title>
-    <!--END HEAD TITLE-->
+	<!--Block Debug Tools-->
+	<script>
+    var debugMode = false;
+    function disableInfo() {
+      document.onkeydown = function() {
+        var e = window.event || arguments[0];
+        // block F12
+        if (e.keyCode == 123) {
+          return false;
+        // block Ctrl+Shift+I
+        } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+          return false;
+        // block Shift+F10
+        } else if ((e.shiftKey) && (e.keyCode == 121)) {
+          return false;
+        }
+      };
+      // block right click
+      document.oncontextmenu = function() {
+        return false;
+      }
+    }
+    if (!debugMode) disableInfo();
+	</script>
+
+	<!--BEGIN HEAD TITLE-->
+	<title>HZT - RESUME</title>
+	<!--END HEAD TITLE-->
 </head>
 <body>
 
@@ -296,7 +319,7 @@
 
 <!--BEGIN SCRIPTS-->
 <!--BASIC JQUERY JS-->
-<script src="js/jquery.js"></script>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <!--BACK POSITION JS-->
 <script src="js/backPosition.js"></script>
 <!--CUSTOM JS-->
