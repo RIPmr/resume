@@ -619,13 +619,15 @@ ul#jobs,
 ul#schools,
 ul#recommends,
 ul#project,
+ul#scholar,
 ul#seenOn {
-    margin: 0;
-    list-style: none;
+	margin: 0;
+	list-style: none;
 }
 
 ul#jobs li,
 ul#schools li,
+ul#scholar li,
 ul#project li,
 ul#recommends li {
     margin: 0 0 20px 0;
@@ -637,7 +639,12 @@ ul#schools li .details,
 ul#project li .details,
 ul#recommends li .details {
     float: left;
-    width: 40%
+    width: 60%
+}
+
+ul#scholar li .details {
+    float: left;
+    width: 30%
 }
 
 ul#jobs li p,
@@ -645,8 +652,14 @@ ul#schools li > p,
 ul#project li > p,
 ul#recommends li > p {
     float: right;
-    width: 57%;
+    width: 37%;
     margin-bottom: 25px;
+}
+
+ul#scholar li > p {
+	float: right;
+	width: 70%;
+	margin-bottom: 25px;
 }
 
 .details h5 {
@@ -738,10 +751,22 @@ body.respond ul#recommends li .details {
     width: 100%
 }
 
+body.respond ul#scholar li .details {
+    float: none;
+    width: 100%
+}
+
 body.respond ul#jobs li p,
 body.respond ul#schools li > p,
 body.respond ul#project li > p,
 body.respond ul#recommends li > p {
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+body.respond ul#scholar li > p {
     float: none;
     width: 100%;
     margin-bottom: 50px;
