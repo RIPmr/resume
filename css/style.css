@@ -639,12 +639,12 @@ ul#schools li .details,
 ul#project li .details,
 ul#recommends li .details {
     float: left;
-    width: 60%
+    width: 65%
 }
 
 ul#scholar li .details {
     float: left;
-    width: 30%
+    width: 40%
 }
 
 ul#jobs li p,
@@ -652,13 +652,13 @@ ul#schools li > p,
 ul#project li > p,
 ul#recommends li > p {
     float: right;
-    width: 37%;
+    width: 25%;
     margin-bottom: 25px;
 }
 
 ul#scholar li > p {
 	float: right;
-	width: 70%;
+	width: 50%;
 	margin-bottom: 25px;
 }
 
